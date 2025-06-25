@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="new-user user">
+  <form onsubmit="return handleUserSubmit(event)">
+    <p>What is your name?</p>
+    <input type="text" class="name-text" placeholder="Your name" autocomplete="off" maxlength="10"/>
+  </form>
+</div>
+<div class="old-user user">
+  <p>Hello Shun</p>
+  <div class="items">
+    <form onsubmit="return handleItemSubmit(event)">
+    <input type="text" class="item-text" placeholder="what to do?" maxlength="10"/>
+    </form>
+    <ul class="item"></ul>
+  </div>
+</div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/app.js"></script>
+<script src="js/item.js"></script>
+</html>
